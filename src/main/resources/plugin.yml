@@ -1,0 +1,17 @@
+name: GretnaServer
+main: gretnaserver.GretnaMain
+author: RedThunderSpartan
+api-version: "1.8"
+version: "1.0.0"
+
+commands:
+  vanish:
+    description: Allows staff members to vanish
+  heal:
+    description: Allows staff to heal members
+  launch:
+    description: Launches a player in the air
+  wcreate:
+    description: Creates a world
+  wdelete:
+    description: Deletes a world
