@@ -5,6 +5,7 @@ import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 import src.gretnaserver.commands.worlds.CreateWorldCommand;
 import src.gretnaserver.commands.worlds.DeleteWorldCommand;
+import src.gretnaserver.commands.worlds.WorldTeleport;
 import src.gretnaserver.events.OnPlayerJoin;
 import src.gretnaserver.events.StaffChat;
 import src.gretnaserver.staff.HealCommand;
@@ -43,6 +44,7 @@ public class GretnaMain extends JavaPlugin {
         Objects.requireNonNull(getCommand("launch")).setExecutor(new Launch());
         Objects.requireNonNull(getCommand("wcreate")).setExecutor(new CreateWorldCommand());
         Objects.requireNonNull(getCommand("wdelete")).setExecutor(new DeleteWorldCommand());
+        Objects.requireNonNull(getCommand("wtp")).setExecutor(new WorldTeleport());
     }
 
     public void loadEvents() {

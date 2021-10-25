@@ -15,3 +15,5 @@ commands:
     description: Creates a world
   wdelete:
     description: Deletes a world
+  wtp:
+    description: Teleports the player to that world
