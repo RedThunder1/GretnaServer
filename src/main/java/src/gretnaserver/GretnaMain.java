@@ -20,6 +20,12 @@ public class GretnaMain extends JavaPlugin {
     public static GretnaMain plugin;
     public static GretnaMain get() { return plugin; }
 
+    //TOOD Make duel game
+    //TODO Make CakeWars like game
+    
+    
+    
+    
     @Override
     public void onEnable() {
         getServer().getConsoleSender().sendMessage(ChatColor.GREEN + "[!] Gretna Main has been ENABLED [!]");
