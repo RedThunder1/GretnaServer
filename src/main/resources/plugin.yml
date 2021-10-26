@@ -17,3 +17,5 @@ commands:
     description: Deletes a world
   wtp:
     description: Teleports the player to that world
+  ban:
+    description: Allows staff to ban players!

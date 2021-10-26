@@ -27,7 +27,7 @@ public class BanCommand implements CommandExecutor {
 			return false;
 		}
 		
-		if (!(args.length > 0)) {
+		if (args.length == 0) {
 			player.sendMessage(ChatColor.RED + "Please provide a player to ban!");
 			return false;
 		}

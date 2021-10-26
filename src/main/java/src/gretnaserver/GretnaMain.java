@@ -11,6 +11,8 @@ import src.gretnaserver.events.StaffChat;
 import src.gretnaserver.staff.HealCommand;
 import src.gretnaserver.staff.Launch;
 import src.gretnaserver.staff.Vanish;
+import src.gretnaserver.staff.ban.BanCommand;
+import src.gretnaserver.staff.ban.BanMenuevent;
 
 import java.util.Objects;
 
@@ -45,12 +47,14 @@ public class GretnaMain extends JavaPlugin {
         Objects.requireNonNull(getCommand("wcreate")).setExecutor(new CreateWorldCommand());
         Objects.requireNonNull(getCommand("wdelete")).setExecutor(new DeleteWorldCommand());
         Objects.requireNonNull(getCommand("wtp")).setExecutor(new WorldTeleport());
+        Objects.requireNonNull(getCommand("ban")).setExecutor(new BanCommand());
     }
 
     public void loadEvents() {
         PluginManager pluginManager = getServer().getPluginManager();
         pluginManager.registerEvents(new OnPlayerJoin(), this);
         pluginManager.registerEvents(new StaffChat(), this);
+        pluginManager.registerEvents(new BanMenuevent(), this);
     }
 
 }
