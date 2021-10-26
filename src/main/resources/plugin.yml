@@ -18,4 +18,4 @@ commands:
   wtp:
     description: Teleports the player to that world
   ban:
-    description: Allows staff to ban players!
+    description: Allows staff to ban players
